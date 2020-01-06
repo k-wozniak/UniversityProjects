@@ -15,7 +15,6 @@
  * Computes Average for each cell in a column using its 4 neighbours
  * For each row beginning from startRow to endRow
  * columns - number of columns in the read and write Array
- * rows - number of rows in the read and write array
  * sRow - start Row (inclusive)
  * eRow - end row (inclusive)
  * readArr - array used to read the values

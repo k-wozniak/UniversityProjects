@@ -70,7 +70,6 @@ static void mainSetup_tooZeroPrecison_ErrorOutput()
 	int argc = 7;
 	char* argv[] = {"ProgramName", "-testArray", "10", "5", "-p", "0", "-print"};
 
-
 	// Create and populate the structure
 	ProcessInfo threadInfo;
 	initialiseEmptyProcessInfo(&threadInfo);

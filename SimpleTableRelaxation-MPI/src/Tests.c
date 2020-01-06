@@ -37,4 +37,3 @@ void runAllTests()
 		"Main Tests Success."
 	);
 }
-

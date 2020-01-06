@@ -39,7 +39,6 @@ int getSegmentHeight(int rank, int processesNum, int totalRows);
  */
 void printArray(double **array, int rows, int cols);
 
-
 /**
  * Swaps addresses to which the pointers point to
  */
