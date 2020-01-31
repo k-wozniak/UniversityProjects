@@ -20,3 +20,15 @@ Contains software project created during the my university program.
 
 ## Feedback
 
+Grade 83/100
+
+* A bit over-engineered? - I fallowed TTD and implemented extensive input functionality. So probably, but at the same time hopefully a high quality code
+
+* Generally good code (though you do need better commenting to explain your
+strategies) For example a comment:
+"// Asynchronous so means the computation can be done while the messages (...)"
+
+Did you find this was better than the simpler Sendrevc?  You need careful commenting in your code to explain how you avoid races on the buffers MPI_Ibarrier() why a barrier? More explanation needed(barriers are not normally needed in MPI) - it was also noted as part of the feedback that it is explained well in the report. Therefore, requires more clear explanatin in the code.
+
+* Scalability investigation.
+Note that 1500 is still quite small for MPI. Larger matrices are needed to see the true benefit of MPI. I capped the maximum size of the array to the maximum size possible to compute in the time limit on a single core. Therefore, I suggest to remove this limitation and compute maximum times for each configuration.
