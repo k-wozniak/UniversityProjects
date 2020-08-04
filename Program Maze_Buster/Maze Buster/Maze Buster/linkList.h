@@ -21,10 +21,54 @@ struct _List {
 	int count;
 };
 
-// Functions Declaration for List
+/* Function: addFirst
+ * ------------------
+ * Appends a node at the beginning of the link-list
+ *
+ * list: The list to which the node will be added
+ * node: Item to be added
+ */
 void addFirst(List *list, Node *node);
+
+/* Function: insertNodeSorted
+ * --------------------------
+ * Inserts the node based on the heuristics. Used for the A* algorithm.
+ *
+ * list: The list to which the node will be added
+ * node: Item to be added
+ */
 void insertNodeSorted(List *list, Node *node);
+
+/* Function: removeFirst
+ * ---------------------
+ * Removes and returns the first item from the list.
+ *
+ * list: the list from which the item needs to be removed
+ *
+ * returns: the node removed
+ */
 Node *removeFirst(List *list);
+
+/* Function: destroyLinkList
+ * -------------------------
+ * Deallocate memory and removed the list
+ *
+ * list: list to destroy
+ */
 void destroyLinkList(List *list);
+
+/* Function: isEmpty
+ * -----------------
+ * Checks if the list has any nodes
+ *
+ * list: List to be checked
+ *
+ * returns: 0 for false and 1 for true
+ */
 int isEmpty(List *list);
+
+/* Function: linkList_Test
+ * -----------------------
+ * Runs a set of unit tests
+ */
 void linkList_Test();

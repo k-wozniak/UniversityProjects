@@ -13,7 +13,6 @@ struct _Node {
 	Node * parent;
 };
 
-
 /*
 * struct _MazeData: Main structure required for solving the maze.
 *     Stores the size, start and finish position in the table info[6]
@@ -29,9 +28,41 @@ struct _MazeData {
 };
 
 // Functions Declaration
+
+/* Function: readMaze
+ * ------------------
+ * Reads a maze from a file to the data structure
+ *
+ * fileLocation: location of the file with maze
+ *
+ * returns: Returns MazeData with loaded values or NULL if error occurred
+ */
 MazeData *readMaze(char* fileLocation);
+
+/* Function: printMaze
+ * -------------------
+ * Prints maze to the console
+ *
+ * m_mazeData: data structure with maze
+ */
 void printMaze(MazeData *m_mazeData);
+
+/* Function: destroyMazeData
+ * -------------------------
+ * Deallocate memory in the MazeData data structure
+ *
+ * m_mazeData: data structure with information
+ */
 void destroyMazeData(MazeData *m_mazeData);
+
+/* Function: saveMaze
+ * ------------------
+ * Saves the solution to the file of the location m_fileLocation. In case the file is not possible
+ * to be open or created, displays the error message (Not a critical)
+ *
+ * fileLocation: Location of the file where maze should be saved
+ * m_mazeData: Maze to be saved
+ */
 void saveMaze(char* fileLocation, MazeData *m_mazeData);
 
 // Function Testing all functions in storage
