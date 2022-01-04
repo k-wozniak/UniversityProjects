@@ -1,4 +1,4 @@
-# CM30225 Parallel ComputingAssessed Coursework Assignment 1
+# CM30225 Parallel Computing Assessed Coursework Assignment 1
 
 ## Specification
 
